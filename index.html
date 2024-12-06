@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* All previous styles remain the same */
+    body {
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: monospace;
+      font-size: 14px;
+      line-height: 1.1;
+      overflow: hidden;
+    }
+    .card {
+      white-space: pre;
+      color: #00B4F0;
+      margin: 24px 0;
+    }
+    @keyframes crazyColors {
+      0% { color: #FF385C; }
+      25% { color: #FFD700; }
+      50% { color: #4BC0C0; }
+      75% { color: #9370DB; }
+      100% { color: #FF385C; }
+    }
+    @keyframes shake {
+      0%, 100% { transform: translate(0, 0) rotate(0deg); }
+      25% { transform: translate(-2px, 2px) rotate(-1deg); }
+      50% { transform: translate(2px, -2px) rotate(1deg); }
+      75% { transform: translate(-2px, -2px) rotate(-1deg); }
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .crazy-line {
+      display: block;
+      animation: crazyColors 3s linear infinite;
+    }
+    .shake {
+      display: inline-block;
+      animation: shake 0.5s linear infinite;
+    }
+    .pulse {
+      display: inline-block;
+      animation: pulse 1s ease-in-out infinite;
+    }
+    .spin {
+      display: inline-block;
+      animation: spin 2s linear infinite;
+    }
+    .matrix {
+      text-shadow: 0 0 10px currentColor;
+      animation: crazyColors 1s steps(1) infinite;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+<span class="crazy-line">       _________________         </span>
+<span class="crazy-line">      |     SYSTEM     |        </span>
+<span class="crazy-line">      | <span class="matrix">INITIALIZING</span>... |        </span>
+<span class="crazy-line">      |_________________|        </span>
+<span class="crazy-line">⚡️ HAPPY HOLIDAYS FOR BARCELONA CODERS ⚡️</span>
+<span class="pulse">W</span><span class="shake">O</span><span class="pulse">M</span><span class="shake">E</span><span class="pulse">N</span> <span class="shake">I</span><span class="pulse">N</span> <span class="shake">T</span><span class="pulse">E</span><span class="shake">C</span><span class="pulse">H</span> <span class="spin">⚡️</span>
+<span class="crazy-line">        <span class="spin">@</span> SAGRADA CODE <span class="spin">@</span>        </span>
+<span class="crazy-line">            ┌───┐               </span>
+<span class="crazy-line">         ┌──┘<span class="matrix">npm</span>└──┐            </span>
+<span class="crazy-line">      ┌──┘<span class="shake">{bcn.dev}</span>└──┐         </span>
+<span class="crazy-line">   ┌──┘<span class="matrix">while(siesta)</span>└──┐      </span>
+<span class="crazy-line">┌──┘<span class="pulse">{python3 translate.py}</span>└──┐   </span>
+<span class="crazy-line">      └─────┬─────┘            </span>
+<span class="crazy-line">            │                   </span>
+<span class="crazy-line">         ▀▀▀█▀▀▀                </span>
+<span class="matrix">class Barcelona implements Paradise {</span>
+<span class="crazy-line">    public void celebrate() {    </span>
+<span class="crazy-line">        while(sun.shining) {    </span>
+<span class="crazy-line">            <span class="shake">beach.code++;</span>         </span>
+<span class="crazy-line">            <span class="pulse">vermut.enjoy();</span>       </span>
+<span class="crazy-line">        }                        </span>
+<span class="crazy-line">    }                            </span>
+<span class="crazy-line">}                                </span>
+<span class="matrix">* * * ¡FELICES FIESTAS 2024! * * *</span>
+  </div>
+</body>
+</html>
